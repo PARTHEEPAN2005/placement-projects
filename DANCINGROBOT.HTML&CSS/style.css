@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+.head{
+    margin: 0 auto;
+    width: 150px;
+    height:170px;
+    background-color:red;
+    margin-top: 200px;
+    border-radius: 50% 50% 30% 30%;
+    margin-bottom: 5px;
+}
+
+.eyes{
+    display: flex;
+    justify-content: space-around;
+   
+
+}
+.left_eye{
+    width: 20px;
+    height: 20px;
+    background-color:red;
+    border-radius: 50%;
+    margin-top: 70px;
+}
+.right_eye{
+    width: 20px;
+    height: 20px;
+    background-color:red;
+    border-radius: 50%;
+    margin-top: 70px;
+}
+
+.middle{
+   
+    height: 190px;
+    width: 240px;
+    margin: 0 auto;
+    justify-content: space-around;
+    display: flex;
+   
+   
+}
+
+.left_hand{
+    width: 30px;
+    height: 100px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color:red;
+}
+.middle_body{
+    width: 170px;
+    height: 190px;
+    background-color:red;
+    border-radius: 35px;
+}
+
+.right_hand{
+    width: 30px;
+    height: 100px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: red;
+   
+}
+.lower{
+   
+    height: 110px;
+    width: 130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.left_leg{
+    
+    width: 30px;
+    height: 100px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color:red;
+}
+.right_leg{
+    
+    width: 30px;
+    height: 100px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color:red;
+}
+.robot:hover .head,
+.robot:hover .left_hand,
+.robot:hover .right_hand,
+.robot:hover .middle_body,
+.robot:hover .left_leg,
+.robot:hover .right_leg{
+
+    background-color:aqua;
+}
+.robot:hover .left_eye,
+.robot:hover .right_eye{
+    background-color: wheat;
+
+}
+.robot:hover .head{
+    width: 190px;
+    transition: background-color 0.5s ease-in-out ;
+    animation-name:  head-position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+@keyframes head-position{
+    0%{
+        width: 170px;
+        transform: rotate(0deg);
+    }
+    5%{
+        width: 180px;
+        transform: rotate(10deg);
+    }
+    75%{
+        width: 195px;
+        transform: rotate(0deg);
+    }
+    90%{
+        width: 185px;
+        transform: rotate(-10deg);
+    }
+    100%{
+        width: 170px;
+        transform: rotate(10deg);
+    }
+}
+.robot:hover .left_hand{
+    width: 190px;
+    transition: background-color 0.5s ease-in-out ;
+    animation-name:  left-position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    
+}
+@keyframes left-position{
+    0%{
+        width: 35px;
+        height: 110px;
+        transform: rotate(0deg);
+        transform-origin:top;
+    }
+    5%{
+        width: 35px;
+        height:110px;
+        transform: rotate(70deg);
+    }
+    75%{
+        width: 35px;
+        height:110px;
+        transform: rotate(0deg);
+    }
+    90%{
+        width: 35px;
+        height:110px;
+        transform: rotate(-70deg);
+    }
+    100%{
+        width: 35px;
+        height:110px;
+        transform: rotate(0deg);
+    }
+}
+.robot:hover .right_hand{
+    width: 190px;
+    transition: background-color 0.5s ease-in-out ;
+    animation-name:  right-position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.50s;
+    
+}
+@keyframes right-position{
+    0%{
+        width: 35px;
+        height: 110px;
+        transform: rotate(0deg);
+        transform-origin:top;
+    }
+    5%{
+        width: 35px;
+        height:110px;
+        transform: rotate(-70deg);
+    }
+    75%{
+        width: 35px;
+        height:110px;
+        transform: rotate(0deg);
+    }
+    90%{
+        width: 35px;
+        height:110px;
+        transform: rotate(+70deg);
+    }
+    100%{
+        width: 35px;
+        height:110px;
+        transform: rotate(0deg);
+    }
+}
+.robot:hover .right_leg{
+    width: 190px;
+    transition: background-color 0.5s ease-in-out ;
+    animation-name:  right-position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    
+}
+@keyframes right-position{
+    0%{
+        width: 35px;
+        height: 110px;
+        transform-origin:top;
+        transform: rotate(0deg);
+    }
+    5%{
+        width: 35px;
+        height:110px;
+        transform: rotate(-70deg);
+    }
+    75%{
+        width: 35px;
+        height:110px;
+        transform: rotate(0deg);
+    }
+    90%{
+        width: 35px;
+        height:110px;
+        transform: rotate(70deg);
+    }
+    100%{
+        width: 35px;
+        height:110px;
+        transform: rotate(0deg);
+    }
+}
+.robot:hover .left_leg{
+    width: 190px;
+    transition: background-color 0.5s ease-in-out ;
+    animation-name:  left-position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    
+}
+@keyframes left-position{
+    0%{
+        width: 35px;
+        height: 110px;
+        transform: rotate(0deg);
+        transform-origin:top;
+    }
+    5%{
+        width: 35px;
+        height:110px;
+        transform: rotate(70deg);
+    }
+    75%{
+        width: 35px;
+        height:110px;
+        transform: rotate(0deg);
+    }
+    90%{
+        width: 35px;
+        height:110px;
+        transform: rotate(-70deg);
+    }
+    100%{
+        width: 35px;
+        height:110px;
+        transform: rotate(0deg);
+    }
+}
+.robot:hover .middle{
+    width: 190px;
+    transition: background-color 0.5s ease-in-out ;
+    animation-name:  middle-position;
+    animation-iteration-count: infinite;
+    animation-duration: 0.30s;
+}
+@keyframes middle-position{
+    0%{
+        width: 170px;
+        transform: rotate(0deg);
+    }
+    5%{
+        width: 180px;
+        transform: rotate(10deg);
+    }
+    75%{
+        width: 195px;
+        transform: rotate(0deg);
+    }
+    90%{
+        width: 185px;
+        transform: rotate(-10deg);
+    }
+    100%{
+        width: 170px;
+        transform: rotate(0deg);
+    }
+}
+.robot{
+    
+    height:500px;
+    width: 350px;
+   margin-left: 470px;
+   margin-top: -100px;
+}
+.hewe h2{
+    margin-top: 60px;
+    
+}
