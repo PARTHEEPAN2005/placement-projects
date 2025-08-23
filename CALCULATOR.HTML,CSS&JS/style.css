@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: auto;
+  
+   
+
+}
+.all{
+    background-color:darkgrey;
+    margin-top: 100px;
+    margin-right: 470px;
+    border-radius: 10px;
+    margin-bottom: 400px;
+    margin-left: 490px;
+    display: grid;
+    height: 250px;
+    width:300px;
+
+    
+}
+.first{
+   margin-left: 30px;
+ margin-top: 10PX;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4,50px);
+ 
+   
+}
+.first button{
+    border-radius: 5px;
+    background-color: wheat;
+    margin-top: 7px;
+}
+.calc input{
+    margin-left: 30px;
+    width: 220px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 12px;
+    
+   
+    
+}
+.part
+{
+    margin-left: -50px;
+    margin-top: 50px;
+}
